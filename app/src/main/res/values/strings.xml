@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Football ScoreKeeper</string>
+    <string name="teamnamea">FC Barcelona</string>
+    <string name="teamnameb">Real Madrid</string>
+    <string name="resetbutton">New Match</string>
+    <string name="scorefinala">0</string>
+    <string name="scorefinalb">0</string>
+    <string name="button1score">Goal</string>
+    <string name="button2score">Foul</string>
+    <string name="action_settings">Settings</string>
+    <string name="teamfont">sans-serif-medium</string>
+    <string name="scorefont">sans-serif-light</string>
+    <string name="foulsTeamA">Fouls: 0</string>
+    <string name="yellowcardteamA">0</string>
+    <string name="redcardteamA">0</string>
+    <string name="foulsTeamB">Fouls: 0</string>
+    <string name="yellowcardteamB">0</string>
+    <string name="redcardteamB">0</string>
+    <string name="redcardbutton">Red \nCard</string>
+    <string name="yellowcardbutton">Yellow \nCard</string>
+    <string name="backgrounddescraption">Camp nou</string>
+</resources>

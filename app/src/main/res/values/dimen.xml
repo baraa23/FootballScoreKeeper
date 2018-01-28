@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="teamNameTextViews">17sp</dimen>
+    <dimen name="scoreTextViews">56sp</dimen>
+    <dimen name="paddingTeamName">16dp</dimen>
+    <dimen name="paddingbottom">6dp</dimen>
+    <dimen name="marginButtons1">8dp</dimen>
+    <dimen name="margenButtonstop">8dp</dimen>
+    <dimen name="foulsteamABtextsize">17sp</dimen>
+    <dimen name="iconmarginyellowright">8dp</dimen>
+    <dimen name="logowidth">80dp</dimen>
+    <dimen name="logoheight">80dp</dimen>
+    <dimen name="foulspaddingleft">4dp</dimen>
+    <dimen name="foulspaddingright">35dp</dimen>
+    <dimen name="yellowAndRedCardIconsize">25dp</dimen>
+    <dimen name="yellowcardsmarginrightA">8dp</dimen>
+    <dimen name="yellowcardsmarginleftA">6dp</dimen>
+    <dimen name="textsizeyellowcards">15sp</dimen>
+    <dimen name="redcardsmarginright">6dp</dimen>
+    <dimen name="redcardsmarginleft">8dp</dimen>
+    <dimen name="textsizeredcards">15sp</dimen>
+    <dimen name="textsizegoalbutton">22sp</dimen>
+    <dimen name="textsizefoulbutton">22sp</dimen>
+    <dimen name="yellowcardmarginrightbutton">2dp</dimen>
+    <dimen name="yellowcardbuttontextsize">12sp</dimen>
+    <dimen name="redcardmarginrightbutton">2dp</dimen>
+    <dimen name="redcardbuttontextsize">12sp</dimen>
+    <dimen name="paddingtoplogo">16dp</dimen>
+    <dimen name="marginbottomlogo">4dp</dimen>
+
+
+
+</resources>
+
+
+
