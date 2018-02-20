@@ -5,6 +5,120 @@
         <item name="colorPrimary">#FF9800</item>
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#1B5E20</item>
+    </style>
 
+    <style name="scrollViewParent">
+        <!--style the scroll view -->
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/backgroundbarcaa</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="relativeParent">
+        <!--style the parent view (RelativeLayout)-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="linearLayoutMain">
+        <!--style the main linear layout-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="linearLayoutsecond">
+        <!--the sub linear layout-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="textTeamName">
+        <!--modify team name style-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="finalScoreGoal">
+        <!--modify the final score (goals)-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="fouls">
+        <!--modify fouls style-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:alpha">0.9</item>
+    </style>
+
+    <style name="cardViesScore">
+        <!--modify card views style-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="cardsIcons">
+        <!--modify cards icons size-->
+        <item name="android:layout_width">@dimen/yellowAndRedCardIconsize</item>
+        <item name="android:layout_height">@dimen/yellowAndRedCardIconsize</item>
+    </style>
+
+    <style name="cardScore">
+        <!--modify yellow and red cards score style-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="goalButton">
+        <!--modify goal button style-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0.9</item>
+    </style>
+
+    <style name="foulButton">
+        <!--modify foul button style-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">0.9</item>
+    </style>
+
+    <style name="linearCardsButtons">
+        <!--modify cards buttons layout style-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="yellowAndRedCardsButton">
+        <!--modify yellow card button-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:alpha">0.9</item>
+    </style>
+
+    <style name="viewLine">
+        <!--modify view line in the middle of the screen-->
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="resetButton">
+        <!--modify reset button "new game"-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
     </style>
 </resources>

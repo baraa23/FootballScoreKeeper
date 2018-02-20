@@ -1,31 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--This project was created as a part of the Android Basics Nanodegree by Google Program-->
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/backgroundbarcaa"
-    android:layout_gravity="top"
-    android:fillViewport="true">
-
+    style="@style/scrollViewParent">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/relativeParent"
         tools:context="com.example.android.footballscorekeeper.MainActivity">
-
 
         <LinearLayout
             android:id="@+id/linearlinear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/linearLayoutMain">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+            <LinearLayout style="@style/linearLayoutsecond">
 
                 <ImageView
                     android:id="@+id/barcalogo"
@@ -38,21 +27,16 @@
 
                 <TextView
                     android:id="@+id/team_a_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textTeamName"
                     android:fontFamily="sans-serif-medium"
-                    android:gravity="center"
                     android:text="@string/teamnamea"
-                    android:textAllCaps="true"
                     android:textColor="@color/teamNameColor"
                     android:textSize="@dimen/teamNameTextViews" />
 
 
                 <TextView
                     android:id="@+id/team_a_score"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
+                    style="@style/finalScoreGoal"
                     android:paddingBottom="@dimen/paddingbottom"
                     android:text="@string/scorefinala"
                     android:textColor="@color/scoreColor"
@@ -60,10 +44,7 @@
 
                 <TextView
                     android:id="@+id/team_a_fouls"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:alpha="0.9"
+                    style="@style/fouls"
                     android:background="@color/colorPrimary"
                     android:fontFamily="sans-serif-medium"
                     android:paddingLeft="@dimen/foulspaddingleft"
@@ -72,23 +53,17 @@
                     android:textSize="@dimen/foulsteamABtextsize" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="8dp"
-                    android:alpha="0.9"
+                    style="@style/cardViesScore"
+                    android:layout_margin="@dimen/cardViewMargin"
                     android:background="@color/colorPrimary">
 
                     <ImageView
-                        android:layout_width="@dimen/yellowAndRedCardIconsize"
-                        android:layout_height="@dimen/yellowAndRedCardIconsize"
+                        style="@style/cardsIcons"
                         android:src="@drawable/yellocard" />
 
                     <TextView
                         android:id="@+id/team_a_yellow_cards"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
+                        style="@style/cardScore"
                         android:layout_marginLeft="@dimen/yellowcardsmarginleftA"
                         android:layout_marginRight="@dimen/yellowcardsmarginrightA"
                         android:text="@string/yellowcardteamA"
@@ -96,17 +71,14 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:layout_width="@dimen/yellowAndRedCardIconsize"
-                        android:layout_height="@dimen/yellowAndRedCardIconsize"
+                        style="@style/cardsIcons"
                         android:layout_marginLeft="@dimen/redcardsmarginleft"
                         android:layout_marginRight="@dimen/redcardsmarginright"
                         android:src="@drawable/redcard" />
 
                     <TextView
                         android:id="@+id/team_a_red_cards"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
+                        style="@style/cardScore"
                         android:layout_marginRight="@dimen/redcardsmarginright"
                         android:text="@string/redcardteamA"
                         android:textSize="@dimen/textsizeredcards"
@@ -116,11 +88,9 @@
 
                 <Button
                     android:id="@+id/goal_team_a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/goalButton"
                     android:layout_marginLeft="@dimen/marginButtons1"
                     android:layout_marginRight="@dimen/marginButtons1"
-                    android:alpha="0.9"
                     android:fontFamily="sans-serif-medium"
                     android:onClick="addOneForTeamA"
                     android:text="@string/button1score"
@@ -130,12 +100,10 @@
 
                 <Button
                     android:id="@+id/foul_team_a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/foulButton"
                     android:layout_marginLeft="@dimen/marginButtons1"
                     android:layout_marginRight="@dimen/marginButtons1"
                     android:layout_marginTop="@dimen/margenButtonstop"
-                    android:alpha="0.9"
                     android:fontFamily="sans-serif-medium"
                     android:onClick="addOneFoulTeamA"
                     android:text="@string/button2score"
@@ -143,18 +111,13 @@
                     android:textSize="@dimen/textsizefoulbutton"
                     android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <LinearLayout style="@style/linearCardsButtons">
 
                     <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/yellowAndRedCardsButton"
                         android:layout_marginLeft="@dimen/marginButtons1"
                         android:layout_marginRight="@dimen/yellowcardmarginrightbutton"
                         android:layout_marginTop="@dimen/margenButtonstop"
-                        android:layout_weight="1"
-                        android:alpha="0.9"
                         android:background="@color/yellow"
                         android:fontFamily="sans-serif-medium"
                         android:onClick="addYellowForTeamA"
@@ -163,13 +126,10 @@
                         android:textSize="@dimen/yellowcardbuttontextsize" />
 
                     <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/yellowAndRedCardsButton"
                         android:layout_marginLeft="@dimen/redcardmarginrightbutton"
                         android:layout_marginRight="@dimen/marginButtons1"
                         android:layout_marginTop="@dimen/margenButtonstop"
-                        android:layout_weight="1"
-                        android:alpha="0.9"
                         android:background="@color/red"
                         android:fontFamily="sans-serif-medium"
                         android:onClick="addRedForTeamA"
@@ -182,16 +142,11 @@
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
+                style="@style/viewLine"
+                android:layout_marginTop="@dimen/viewLineMargin"
                 android:background="@color/scoreColor" />
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+            <LinearLayout style="@style/linearLayoutsecond">
 
                 <ImageView
                     android:id="@+id/reallogo"
@@ -204,21 +159,16 @@
 
                 <TextView
                     android:id="@+id/team_b_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textTeamName"
                     android:fontFamily="sans-serif-medium"
-                    android:gravity="center"
                     android:text="@string/teamnameb"
-                    android:textAllCaps="true"
                     android:textColor="@color/teamNameColor"
                     android:textSize="@dimen/teamNameTextViews" />
 
 
                 <TextView
                     android:id="@+id/team_b_score"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
+                    style="@style/finalScoreGoal"
                     android:paddingBottom="@dimen/paddingbottom"
                     android:text="@string/scorefinalb"
                     android:textColor="@color/scoreColor"
@@ -226,10 +176,7 @@
 
                 <TextView
                     android:id="@+id/team_b_fouls"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:alpha="0.9"
+                    style="@style/fouls"
                     android:background="@color/colorPrimary"
                     android:fontFamily="sans-serif-medium"
                     android:paddingLeft="@dimen/foulspaddingleft"
@@ -238,23 +185,17 @@
                     android:textSize="@dimen/foulsteamABtextsize" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="8dp"
-                    android:alpha="0.9"
+                    style="@style/cardViesScore"
+                    android:layout_margin="@dimen/cardViewMargin"
                     android:background="@color/colorPrimary">
 
                     <ImageView
-                        android:layout_width="@dimen/yellowAndRedCardIconsize"
-                        android:layout_height="@dimen/yellowAndRedCardIconsize"
+                        style="@style/cardsIcons"
                         android:src="@drawable/yellocard" />
 
                     <TextView
                         android:id="@+id/team_b_yellow_cards"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
+                        style="@style/cardScore"
                         android:layout_marginLeft="@dimen/yellowcardsmarginleftA"
                         android:layout_marginRight="@dimen/yellowcardsmarginrightA"
                         android:text="@string/yellowcardteamB"
@@ -262,17 +203,14 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:layout_width="@dimen/yellowAndRedCardIconsize"
-                        android:layout_height="@dimen/yellowAndRedCardIconsize"
+                        style="@style/cardsIcons"
                         android:layout_marginLeft="@dimen/redcardsmarginleft"
                         android:layout_marginRight="@dimen/redcardsmarginright"
                         android:src="@drawable/redcard" />
 
                     <TextView
                         android:id="@+id/team_b_red_cards"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
+                        style="@style/cardScore"
                         android:layout_marginRight="@dimen/redcardsmarginright"
                         android:text="@string/redcardteamB"
                         android:textSize="@dimen/textsizeredcards"
@@ -283,11 +221,9 @@
 
                 <Button
                     android:id="@+id/goal_team_b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/goalButton"
                     android:layout_marginLeft="@dimen/marginButtons1"
                     android:layout_marginRight="@dimen/marginButtons1"
-                    android:alpha="0.9"
                     android:fontFamily="sans-serif-medium"
                     android:onClick="addOneForTeamB"
                     android:text="@string/button1score"
@@ -297,12 +233,10 @@
 
                 <Button
                     android:id="@+id/foul_team_b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/foulButton"
                     android:layout_marginLeft="@dimen/marginButtons1"
                     android:layout_marginRight="@dimen/marginButtons1"
                     android:layout_marginTop="@dimen/margenButtonstop"
-                    android:alpha="0.9"
                     android:fontFamily="sans-serif-medium"
                     android:onClick="addOneFoulTeamB"
                     android:text="@string/button2score"
@@ -310,18 +244,13 @@
                     android:textSize="@dimen/textsizefoulbutton"
                     android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <LinearLayout style="@style/linearCardsButtons">
 
                     <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/yellowAndRedCardsButton"
                         android:layout_marginLeft="@dimen/marginButtons1"
                         android:layout_marginRight="@dimen/yellowcardmarginrightbutton"
                         android:layout_marginTop="@dimen/margenButtonstop"
-                        android:layout_weight="1"
-                        android:alpha="0.9"
                         android:background="@color/yellow"
                         android:fontFamily="sans-serif-medium"
                         android:onClick="addYellowForTeamB"
@@ -330,13 +259,10 @@
                         android:textSize="@dimen/yellowcardbuttontextsize" />
 
                     <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/yellowAndRedCardsButton"
                         android:layout_marginLeft="@dimen/redcardmarginrightbutton"
                         android:layout_marginRight="@dimen/marginButtons1"
                         android:layout_marginTop="@dimen/margenButtonstop"
-                        android:layout_weight="1"
-                        android:alpha="0.9"
                         android:background="@color/red"
                         android:fontFamily="sans-serif-medium"
                         android:onClick="addRedForTeamB"
@@ -346,23 +272,17 @@
 
                 </LinearLayout>
 
-
             </LinearLayout>
-
 
         </LinearLayout>
 
-
-            <Button
-                android:id="@+id/resetbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/linearlinear"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:onClick="resetbutton"
-                android:text="@string/resetbutton" />
-
+        <Button
+            android:id="@+id/resetbutton"
+            style="@style/resetButton"
+            android:layout_below="@id/linearlinear"
+            android:layout_marginTop="@dimen/resetButtonMargin"
+            android:onClick="resetbutton"
+            android:text="@string/resetbutton" />
 
     </RelativeLayout>
 

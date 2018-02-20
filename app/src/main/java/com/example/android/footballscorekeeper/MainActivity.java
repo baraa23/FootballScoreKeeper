@@ -19,7 +19,10 @@ public class MainActivity extends AppCompatActivity {
         displaygoalTeamB(0);
     }
 
-    //insert next bit under onCreate method
+    /**
+     * Saves scores if screen rewritten
+     *
+     */
     @Override
     public void onSaveInstanceState(Bundle outState) {
 
@@ -35,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Saves scores if screen rewritten
-     *
+     * call saved scores in onSaveInstanceState
+     * @param savedInstanceState
      */
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {

@@ -27,6 +27,9 @@
     <dimen name="redcardbuttontextsize">12sp</dimen>
     <dimen name="paddingtoplogo">16dp</dimen>
     <dimen name="marginbottomlogo">4dp</dimen>
+    <dimen name="cardViewMargin">8dp</dimen>
+    <dimen name="viewLineMargin">16dp</dimen>
+    <dimen name="resetButtonMargin">30dp</dimen>
 
 
 
